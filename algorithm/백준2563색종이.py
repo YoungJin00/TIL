@@ -1,10 +1,18 @@
-import unittest
+# 색종이 수
+N = int(input())
+# 색종이 위치 받아오기
+arr = [[0] * 100 for _ in range(100)]
 
+for _ in range(N):
+  a, b = list(map(int, input().split()))
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)  # add assertion here
+  for i in range(a, a+10):
+    for j in range(b, b+10):
+      arr[i][j] = 1
 
+res = 0
+for c in range(100):
+  res += arr[c].count(1)
 
-if __name__ == '__main__':
-    unittest.main()
+print(res)
+
