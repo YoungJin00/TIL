@@ -33,10 +33,18 @@ for i in range(10):
     dummy_data_company.append(company)
 
 
-user_info = []
-def create_user(**kwargs):
-    user_info.append(kwargs)
+# user_info = []
+# def create_user(**kwargs):
+#     user_info.append(kwargs)
+def create_user(name, age, address):
+    info_list = {}
+    info_list['name'] = name
+    info_list['age'] = age
+    info_list['address'] = address
+    return info_list
 
+def censorship():
+    pass
 
 for i, j, k, l in zip(dummy_data_name, dummy_data_lat, dummy_data_lng, dummy_data_company):
     if -80 < j < 80 and -80 < k < 80:
