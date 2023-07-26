@@ -1,18 +1,17 @@
-# 약수들의 합
+# 약수들의 합       
 
-li = []
-while 1:
-    a = int(input())
-    if a == -1:
+while True:
+    n = int(input())
+    if n == -1:
         break
 
-    for i in range(1, a+1):
-        if a % i == 0:
-            li.append(i)
-    if sum(li) == a:
-        print(a, " = ", " + ".join(str(i) for i in li), sep="")
+    divisors = []
+    for i in range(1, n):
+        if n % i == 0:
+            divisors.append(i)
+
+    if sum(divisors) == n:
+        print(n, "=", " + ".join(str(i) for i in divisors))
     else:
-        print(a, "is NOT perfect.")
-
-
+        print(n, "is NOT perfect.")
 
