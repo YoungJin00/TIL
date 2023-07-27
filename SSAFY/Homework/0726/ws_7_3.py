@@ -7,7 +7,7 @@ class Shape:
       self.height = height
     
     def calculate_perimeter(self):
-      return 2 * self.height + 2 * self.width
+      return 2 * (self.height + self.width)
    
 
 shape1 = Shape(5, 3)
