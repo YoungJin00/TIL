@@ -1,20 +1,17 @@
-# 네번쨰점
+# 3009 네번째 점
 
-cnt = 0
-ls = []
+x_li = []
+y_li = []
 for _ in range(3):
-    a, b = input().split()
-    ls.append(a)
-    ls.append(b)
+    x, y = map(int, input().split())
+    x_li.append(x)
+    y_li.append(y)
 
-one = ls.count(a)
-two = ls.count(b)
-
-if one != 4 and two != 4:
-    print(a, b)
-elif one == 4 and two != 4:
-    print(b, b)
-else:
-    print(a, a)
+for i in range(3):
+    if x_li.count(x_li[i]) == 1:
+        x4 = x_li[i]
+    if y_li.count(y_li[i]) == 1:
+        y4 = y_li[i]
 
 
+print(x4, y4)
