@@ -1,12 +1,32 @@
 for test_case in range(1,11):
     res = 0
-    Count = int(input())
+    N = int(input())
     building = list(map(int , input().split()))
-    for i in range(2, Count-2):
+    for i in range(2, N-2):
         d_2 = building[i] - building[i-2]
         d_1 = building[i] - building[i-1]
         d1 = building[i] - building[i+1]
         d2 = building[i] - building[i+2]
         if d_2 > 0 and d_1 > 0 and d1 > 0 and d2 > 0:
-          res += min(d_2, d_1, d1, d2) 
+          res += min(d_2, d_1, d1, d2)
     print(f'#{test_case} {res}')
+    
+    
+"""
+T = 10                      # TC 10개 고정
+for tc in range(1, T+1):    #
+    N = int(input())        # 가로 길이
+    height = list(map(int,input().split()))
+
+    view = 0
+    for i in range(2, N-2):
+        max_v = height[i-2]
+        if max_v < height[i-1]:
+            max_v = height[i-1]
+        if max_v < height [i+2]:
+            max_v = height[i+2]
+        if height[i] > max_v :  # i가 주변 보다 높으면
+            view += height[i] - max_v
+
+    print(f'#{tc} view')
+"""    
