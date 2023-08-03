@@ -1,3 +1,36 @@
+for tc in range(1, 11):
+    _ = int(input())
+    ladder = [list(map(int, input().split())) for _ in range(100)]
+    
+    for i in range(100):
+        if ladder[99][i] == 2:
+            # 출발열 할당
+            col = i
+            break
+    # 출발 행 할당
+    row = 99
+    
+    while row > 0:
+        
+        # 위로 가기
+        row -= 1
+        
+        # 왼쪽으로 이동
+        if col > 0 and ladder[row][col-1] ==1:
+            while col < 0 and ladder[row][col-1] == 1:
+                col -= 1
+        # 오른쪽으로 이동
+        if col < 99 and ladder[row][col+1] == 1:
+            while col < 99 and ladder[row][col+1] == 1:
+                col += 1
+        
+    print(f'#{tc} {col}')
+    
+
+
+
+
+
 # direction 설정 (위, 오, 왼)
 # dr = [-1, 0, 0]
 # dc = [0, 1, -1]

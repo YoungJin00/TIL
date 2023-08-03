@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cad4375-69e3-429d-9e80-f0cefb0a0979" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/M_test/problems_0731/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SSAFY/M_test/problems_0731/test12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/16106.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/1859.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/1945.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/1966.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/4828.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/4834.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/4835.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/gravity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/swea1206.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/swea1208.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/swea1209.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/swea스도쿠검증.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SSAFY/M_test/problems_0731/161.py" beforeDir="false" afterPath="$PROJECT_DIR$/SSAFY/M_test/problems_0731/161.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SSAFY/M_test/problems_0731/input.in" beforeDir="false" afterPath="$PROJECT_DIR$/SSAFY/M_test/problems_0731/input.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithm/swea스도쿠검증.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithm/백준10798세로읽기.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithm/백준2563색종이.py" beforeDir="false" />
