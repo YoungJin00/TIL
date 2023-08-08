@@ -18,3 +18,22 @@ for tc in range(1, T+1):
             MAX = num_li[i]
 
     print(f'#{tc} {MAX}')
+
+# 딕셔너리 활용 풀기
+'''
+T = int(input())
+
+for tc in range(1, T+1):
+    A = input()
+    B = input()
+    dic = {}
+
+    for i in A:
+        if i not in dic.keys():
+            dic[i] = 0
+    for i in B:
+        if i in dic:
+            dic[i] += 1
+    res = max(dic.values())
+    print(f'#{tc} {res}')
+'''
