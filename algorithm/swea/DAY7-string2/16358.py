@@ -37,3 +37,18 @@ for tc in range(1, T+1):
     res = max(dic.values())
     print(f'#{tc} {res}')
 '''
+'''
+for tc in range(1, int(input())+1):
+    str1 = set(input())
+    str2 = input()
+
+    # 딕셔너리 생성 (변수, 0 < 초기값설정)
+    DICT = dict.fromkeys(str1, 0)
+
+    # print(DICT)
+    for s1 in str1:
+        for s2 in str2:
+            if s1 == s2:
+                DICT[s1] += 1
+    print(max(DICT.values()))
+    '''
