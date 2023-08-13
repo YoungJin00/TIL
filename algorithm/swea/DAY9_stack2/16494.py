@@ -31,3 +31,29 @@ for tc in range(1, int(input())+1):
 
     S, G = map(int, input().split())
     print(f'#{tc}', DFS(S, G, V, adj_m))
+    
+
+# 강사님 풀이식으로 풀어보기
+'''
+def DFS(num):
+    visited[num] = 1
+    for i in stack[num]:
+        if visited[i] == 0:
+            DFS(i)
+
+for tc in range(1, int(input())+1):
+    V, E = map(int, input().split())
+    stack = [ [] for _ in range(V+1)]
+    for i in range(E):
+        a, b = map(int, input().split())
+        stack[a].append(b)
+    S, G = map(int, input().split())
+
+    visited = [0] * (V+1)
+
+    DFS(S)
+
+    result = int(visited[G])
+
+    print(f'#{tc} {result}')
+'''
