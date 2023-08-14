@@ -11,3 +11,4 @@ for x in range(2, n+1):
     print(x, "는 소수입니다.")
 
 ## test 한번
+## test 두번
