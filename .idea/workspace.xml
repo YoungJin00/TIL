@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cad4375-69e3-429d-9e80-f0cefb0a0979" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/1859.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/1966.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/4828.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/4834.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/4835.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/swea1208.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/swea/swea스도쿠검증.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/swea스도쿠검증.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/백준10798세로읽기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/백준2563색종이.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,11 +25,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Python Stub" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/algorithm" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -32,12 +42,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/pythonProject" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "project.scopes"
+  }
+}]]></component>
   <component name="RunManager" selected="Python.1221">
     <configuration name="1221" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TIL" />
@@ -153,6 +163,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
