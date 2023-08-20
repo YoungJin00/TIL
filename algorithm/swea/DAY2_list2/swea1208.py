@@ -13,6 +13,21 @@ for tc in range(1, 11):
   res = max(ct) - min(ct)
   print(f'#{tc} {res}')
   
+
+# for tc in range(1, 11):
+#     dump = int(input())
+#     boxes = list(map(int, input().split()))
+
+#     for _ in range(dump):
+#         boxes.sort()
+#         if boxes[-1] - boxes[0] <= 1:
+#             break
+#         boxes[0] += 1
+#         boxes[-1] -= 1
+
+#     res = max(boxes) - min(boxes)
+
+#     print(f'#{tc} {res}')
   
 
 # 내장함수 안쓰고 풀어보기
