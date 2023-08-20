@@ -1,3 +1,4 @@
+# view
 for test_case in range(1,11):
     res = 0
     N = int(input())

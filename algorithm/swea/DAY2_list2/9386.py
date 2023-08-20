@@ -13,7 +13,7 @@ for tc in range(1,T+1):
             cnt = 0
         else:
             cnt += 1
-            if cnt > res:
+            if res < cnt:
                 res = cnt
 
     print(f'{tc} {res}')
