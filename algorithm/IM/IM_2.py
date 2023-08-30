@@ -15,13 +15,18 @@ for tc in range(1, T + 1):
                 for l in range(N-1, j-1, -1):
                     if s == MAP[k][l]:
                         size = (k-i+1) * (l-j+1)
-                        if MAX <= size:
-                            if MAX < size:
-                                MAX = size
-                                cnt = 1
-                            else:
-                                cnt += 1
-                        break
+                        # if MAX <= size:
+                        #     if MAX < size:
+                        #         MAX = size
+                        #         cnt = 1
+                        #     else:
+                        #         cnt += 1
+                        # break
+                        if MAX < size:
+                            MAX = size
+                            cnt = 1
+                        elif MAX == size:
+                            cnt += 1
 
     print(f'#{tc} {cnt}')
 

@@ -33,3 +33,34 @@ for tc in range(1, T+1):
     f(0, N)            # 첫 번째 자리부터 시작하여 순열 생성 및 최소 비용 계산
 
     print(f'#{tc} {MIN}')
+    
+    
+
+def perm(k, acc):
+    global result
+    if acc >= result:
+        return
+    # 언제까지 조사해야 하는가?
+    if k == N:
+        # 누적값과 result 갱신
+        acc += lst[order[N-1]][0]
+        result = min(acc, result)
+
+    else:  # 도착 안했다
+           # 내 위치부터 마지막까지
+        for i in range(k, N):
+            order[k], order[i] = order[i], order[k]
+            perm(k + 1, acc + lst[order[k - 1]][order[k]])
+            order[k], order[i] = order[i], order[k]
+
+
+T = int(input())
+for tc in range(1, T+1):
+    # 방문해야 하는 대상 수
+    N = int(input())
+    lst = [list(map(int, input().split())) for _ in range(N)]
+    # 순열 만들기 위한 리스트
+    order = [i for i in range(N)]
+    result = float('inf')
+    perm(1, 0)
+    print(f'#{tc} {result}')
