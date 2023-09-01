@@ -50,7 +50,30 @@ for tc in range(1, T+1):
 #     print(f'#{tc} {visited[N-1][N-1]}')
 
 
+# 재귀 사용
+def findMinvalue(x,y,value):
+    # print(x,y,value)
+    global res
+    if x == N - 1 and y == N - 1: # 도착점에 도착했을때
+        res = min(res, value)
+        return
+    if 0 <= x+1 < N:
+        findMinvalue(x+1, y, value+MAP[x+1][y]) # 행 변경
 
+    if 0 <= y+1 < N:
+        findMinvalue(x, y+1, value+MAP[x][y+1]) # 열 변경
+
+
+T = int(input())
+
+for tc in range(1, T + 1):
+    N = int(input())
+    MAP = [list(map(int, input().split())) for _ in range(N)]
+
+    res = float('inf')
+    findMinvalue(0,0,MAP[0][0])
+
+    print(f'#{tc} {res}')
 
 
 
