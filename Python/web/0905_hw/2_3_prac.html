@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chessboard</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .chessboard {
+            width: 800px;
+            height: 800px;
+            display: flex;
+            flex-direction: column;
+            /* 행마다 교차로 배치하기 위해 세로 방향으로 배치합니다. */
+            border: 1px solid #000;
+        }
+
+        /* 행 스타일 */
+        .chessboard-row {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            /* 행 전체 너비를 100%로 설정합니다. */
+        }
+
+        /* 칸 스타일 */
+        .chessboard-cell {
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+        }
+
+        /* 짝수 번째 행의 홀수 번째 칸은 검정색 */
+        .chessboard-row:nth-child(even) .chessboard-cell:nth-child(odd) {
+            background-color: #000;
+        }
+
+        /* 짝수 번째 행의 짝수 번째 칸은 흰색 */
+        .chessboard-row:nth-child(even) .chessboard-cell:nth-child(even) {
+            background-color: #fff;
+        }
+
+        /* 홀수 번째 행의 홀수 번째 칸은 흰색 */
+        .chessboard-row:nth-child(odd) .chessboard-cell:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        /* 홀수 번째 행의 짝수 번째 칸은 검정색 */
+        .chessboard-row:nth-child(odd) .chessboard-cell:nth-child(even) {
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chessboard">
+        <div class="chessboard-row">
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+        </div>
+        <div class="chessboard-row">
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+        <div class="chessboard-row">
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+        </div>
+        <div class="chessboard-row">
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+        </div>
+        <div class="chessboard-row">
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+        </div>
+        <div class="chessboard-row">
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+        </div>
+        <div class="chessboard-row">
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+        </div>
+        <div class="chessboard-row">
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+            <div class="chessboard-cell black"></div>
+            <div class="chessboard-cell white"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
