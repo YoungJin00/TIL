@@ -1,7 +1,7 @@
 arr = [3, -100, 1000, -300, 12, 5, 2, 1, 2, 3, 5, 7, 8, 10, 9]
 
 
-def hoare_partition(arr, left, right):
+def lomuto_partition(left, right):
     pivot = arr[right]
     # i = 작은 요소들을 추적
     i = left - 1
@@ -17,12 +17,12 @@ def hoare_partition(arr, left, right):
     return i + 1
 
 
-def quick_sort(arr, left, right):
+def quick_sort(left, right):
     if left < right:
-        pivot = hoare_partition(arr, left, right)
-        quick_sort(arr, left, pivot - 1)
-        quick_sort(arr, pivot + 1, right)
+        pivot = lomuto_partition(left, right)
+        quick_sort(left, pivot - 1)
+        quick_sort(pivot + 1, right)
 
 
-quick_sort(arr, 0, len(arr) - 1)
+quick_sort(0, len(arr) - 1)
 print(arr)
