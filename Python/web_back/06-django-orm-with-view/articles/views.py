@@ -12,6 +12,7 @@ def index(request):
 
 
 def detail(request, pk):
+    # 왼쪽 pk는 컬럼, 오른쪽 pk는 받아오는값
     article = Article.objects.get(pk=pk)
     context = {
         'article': article,
