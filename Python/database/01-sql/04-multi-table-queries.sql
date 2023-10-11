@@ -1,3 +1,4 @@
+
 -- 공통
 SELECT * FROM articles;
 SELECT * FROM users;
@@ -9,8 +10,10 @@ PRAGMA table_info('articles');
 -- 실습용 데이터
 CREATE TABLE users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name VARCHAR(50) NOT NULL
+  name VARCHAR(55) NOT NULL
 );
+
+PRAGMA table_info('users');
 
 CREATE TABLE articles (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -21,6 +24,7 @@ CREATE TABLE articles (
     REFERENCES users(id)
 );
 
+PRAGMA table_info('articles');
 
 INSERT INTO 
   users (name)
@@ -28,6 +32,9 @@ VALUES
   ('하석주'),
   ('송윤미'),
   ('유하선');
+
+SELECT *
+FROM users;
 
 INSERT INTO
   articles (title, content, userId)
@@ -40,9 +47,10 @@ VALUES
 
 
 -- INNER JOIN
-SELECT * FROM articles
-INNER JOIN users 
+SELECT * FROM users
+INNER JOIN articles 
   ON users.id = articles.userId;
+
 
 SELECT articles.title, users.name 
 FROM articles
@@ -51,9 +59,21 @@ INNER JOIN users
 WHERE users.id = 1;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 -- LEFT JOIN
-SELECT * FROM articles
-LEFT JOIN users 
+SELECT * FROM users
+LEFT JOIN articles
   ON users.id = articles.userId;
 
 SELECT * FROM users
@@ -83,3 +103,5 @@ WHERE articles.userId IS NULL;
 
 -- DELETE FROM users 
 -- WHERE id = 4;
+
+
