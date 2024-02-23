@@ -7,7 +7,7 @@ import ErrorBlock from "../UI/ErrorBlock.jsx";
 
 export default function EventForm({ inputData, onSubmit, children }) {
   const [selectedImage, setSelectedImage] = useState(inputData?.image);
-
+  console.log(inputData);
   const { data, isPending, isError } = useQuery({
     queryKey: ["events-images"],
     queryFn: fetchSelectableImages,
